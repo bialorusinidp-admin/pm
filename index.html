@@ -30,7 +30,7 @@ a{color:inherit}
 .dial div:first-child b{color:var(--green)}
 .dial span{font-size:15px;color:var(--muted);margin-top:4px}
 
-.tabs{position:sticky;top:0;z-index:5;background:rgba(242,245,242,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);margin-top:14px;border-bottom:1px solid var(--line)}
+.tabs{position:sticky;top:0;z-index:5;background:var(--bg);box-shadow:0 6px 12px -8px rgba(44,58,52,.18);margin-top:14px;border-bottom:1px solid var(--line)}
 .tabs .wrap{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:10px;padding-bottom:10px}
 .tabs .wrap::-webkit-scrollbar{display:none}
 .tabs a,.tabs a:nth-child(n){flex:0 0 auto;text-decoration:none;background:var(--card);border:1px solid var(--line);color:var(--ink);font:600 14px var(--sans);padding:8px 14px;border-radius:999px}
@@ -194,7 +194,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
 
 <section id="cases">
   <h2>Что делать в конкретной ситуации</h2>
-  <p class="lead">Коротко, по рекомендациям ERC и польского Министерства здравоохранения. Во всех серьёзных случаях сначала — 112. Под каждой карточкой — ссылки на бесплатные уроки с картинками и видео (на польском).</p>
+  <p class="lead">Коротко, по рекомендациям ERC и польского Министерства здравоохранения. Во всех серьёзных случаях сначала — 112. Под каждой карточкой — кнопки с бесплатными уроками: схемы, картинки, видео.</p>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M8 21v-3a4 4 0 0 1 8 0v3M10 13l2 2 2-2"/></svg></span>Человек подавился</h3>
     <ol>
@@ -205,7 +205,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Потерял сознание — звоните 112 и начинайте реанимацию.</li>
     </ol>
     <div class="warn">Младенцам до 1 года толчки в живот делать нельзя: вместо них — 5 нажатий на грудь двумя пальцами.</div>
-  <div class="more"><a href="https://zpe.gov.pl/a/dlawienie-sie-cialem-obcym/D128mk7M7">Урок ZPE: дławienie się</a></div>
+  <div class="more"><a href="https://zpe.gov.pl/a/dlawienie-sie-cialem-obcym/D128mk7M7">Урок: если человек подавился</a></div>
   </div>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></span>Сильное кровотечение</h3>
@@ -215,7 +215,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Промокла — не снимайте, наложите сверху ещё одну.</li>
       <li>Если кровь из руки или ноги бьёт так, что не остановить, — жгут на 5–7 см выше раны и звоните 112.</li>
     </ol>
-  <div class="more"><a href="https://zpe.gov.pl/a/pierwsza-pomoc-w-przypadku-krwotoku/DSNWhoDQF">Урок ZPE: krwotoki</a></div>
+  <div class="more"><a href="https://zpe.gov.pl/a/pierwsza-pomoc-w-przypadku-krwotoku/DSNWhoDQF">Урок: как остановить кровотечение</a></div>
   </div>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4a3 3 0 0 0-3 3 3 3 0 0 0-3 5 3 3 0 0 0 3 5 3 3 0 0 0 6 0 3 3 0 0 0 3-5 3 3 0 0 0-3-5 3 3 0 0 0-3-3zM12 4v16"/></svg></span>Подозрение на инсульт</h3>
@@ -226,7 +226,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li><b>Время:</b> хотя бы один признак — сразу 112 и запомните, когда началось.</li>
     </ul>
     <div class="warn">Не давайте есть, пить и лекарства. При инсульте каждая минута на счету.</div>
-  <div class="more"><a href="https://pacjent.gov.pl/zapobiegaj/niespodziewany-udar">pacjent.gov.pl: udar</a></div>
+  <div class="more"><a href="https://pacjent.gov.pl/zapobiegaj/niespodziewany-udar">Как распознать инсульт</a></div>
   </div>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="9" r="2.5"/><path d="M9 11h9l3 4H11l-2 4"/></svg></span>Без сознания, но дышит</h3>
@@ -235,7 +235,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Уложите человека на бок (устойчивое боковое положение): верхнюю ногу согните в колене, голову слегка запрокиньте, чтобы рот был направлен вниз.</li>
       <li>Укройте и каждую минуту проверяйте дыхание. Перестал дышать нормально — на спину и реанимация.</li>
     </ol>
-  <div class="more"><a href="https://www.gov.pl/web/zdrowie/sposob-postepowania-na-miejscu-zdarzenia">Минздрав: pozycja bezpieczna</a><a href="https://zpe.gov.pl/a/ocena-stanu-poszkodowanego/D4jUjsnWa">Урок ZPE: ocena poszkodowanego</a></div>
+  <div class="more"><a href="https://www.gov.pl/web/zdrowie/sposob-postepowania-na-miejscu-zdarzenia">Как уложить в безопасное положение</a><a href="https://zpe.gov.pl/a/ocena-stanu-poszkodowanego/D4jUjsnWa">Урок: как оценить состояние</a></div>
   </div>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-3 2-4 3-7 1 2 2 3 3 3 0-2 0-4 0-6z"/></svg></span>Ожог</h3>
@@ -245,7 +245,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Накройте стерильной повязкой или пищевой плёнкой.</li>
     </ol>
     <div class="warn">Не мажьте маслом, кремом, сметаной, не прокалывайте пузыри. Большой ожог, ожог лица или ребёнка — 112.</div>
-  <div class="more"><a href="https://zpe.gov.pl/a/oparzenia-termiczne-i-chemiczne/DCWKeeTmy">Урок ZPE: oparzenia</a></div>
+  <div class="more"><a href="https://zpe.gov.pl/a/oparzenia-termiczne-i-chemiczne/DCWKeeTmy">Урок: первая помощь при ожогах</a></div>
   </div>
 
   <div class="sit"><h3><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><path d="M8 21l1-7-3-2M16 21l-1-7 3-2M9 12h6"/></svg></span>Реанимация ребёнка</h3>
@@ -255,7 +255,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Если вы одни и телефон под рукой — сразу 112 на громкой связи и начинайте. Телефона нет — сначала 1 минута реанимации, потом за помощью.</li>
       <li>Младенцу нажимайте двумя пальцами, ребёнку постарше — одной или двумя ладонями.</li>
     </ol>
-  <div class="more"><a href="https://zpe.gov.pl/a/resuscytacja-krazeniowo-oddechowa-dzieci/DtyjAL6Ak">Урок ZPE: RKO dzieci</a><a href="https://zpe.gov.pl/a/resuscytacja-krazeniowo-oddechowa/D1H3G81jq">Урок ZPE: RKO dorosłych</a></div>
+  <div class="more"><a href="https://zpe.gov.pl/a/resuscytacja-krazeniowo-oddechowa-dzieci/DtyjAL6Ak">Урок: реанимация ребёнка</a><a href="https://zpe.gov.pl/a/resuscytacja-krazeniowo-oddechowa/D1H3G81jq">Урок: реанимация взрослого</a></div>
   </div>
 </section>
 
@@ -381,7 +381,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
       <li>Возьмите документ, список лекарств, которые принимаете, и последние результаты обследований.</li>
       <li>Примерное время ожидания в ближайших SOR можно посмотреть на <a href="https://pacjent.gov.pl/">pacjent.gov.pl</a>.</li>
     </ul>
-    <div class="more"><a href="https://www.nfz.gov.pl/aktualnosci/aktualnosci-centrali/poradnik-pacjenta-kiedy-zglosic-sie-do-szpitalnego-oddzialu-ratunkowego,8526.html">NFZ: когда ехать на SOR</a></div>
+    <div class="more"><a href="https://www.nfz.gov.pl/aktualnosci/aktualnosci-centrali/poradnik-pacjenta-kiedy-zglosic-sie-do-szpitalnego-oddzialu-ratunkowego,8526.html">Когда ехать на SOR (NFZ)</a></div>
   </div>
 </section>
 
