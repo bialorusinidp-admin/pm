@@ -143,7 +143,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
 .triage span{color:var(--muted);margin-left:auto;font-size:13.5px;text-align:right}
 .sorlist{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:10px}.sorrow{display:block;padding:11px 16px;border-bottom:1px solid var(--line);text-decoration:none}.sorrow:last-child{border-bottom:0}.sorrow b{display:block;font-size:15px;font-weight:700}.sorrow span{font-size:13.5px;color:var(--muted)}.sorrow span::after{content:"  ›  карта";color:var(--sage);font-weight:600}
 </style>
-<style>.ci-be,.ci-pl{display:none!important}html[lang=be] .ci-ru,html[lang=pl] .ci-ru{display:none!important}html[lang=be] .ci-be,html[lang=pl] .ci-pl{display:block!important}</style></head>
+<style>.ci-be,.ci-pl{display:none!important}html[lang=be] .ci-ru,html[lang=pl] .ci-ru{display:none!important}html[lang=be] .ci-be,html[lang=pl] .ci-pl{display:block!important}</style><style>a.call{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:.3em;-webkit-tap-highlight-color:rgba(5,162,60,.15)}a.call::after{content:"";flex:none;width:.75em;height:.75em;min-width:13px;min-height:13px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2305a23c'%3E%3Cpath d='M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z'/%3E%3C/svg%3E") no-repeat center/contain}</style></head>
 <body><div id="langsw" style="display:flex;width:fit-content;margin:10px 12px 0 auto;border:1px solid #d5ddd7;gap:2px;background:rgba(255,255,255,.85);border-radius:999px;padding:3px;font:600 12px Inter,system-ui,sans-serif"><a href="#ru" data-l="ru" style="padding:5px 10px;border-radius:999px;text-decoration:none;color:#3f5d4c">RU</a><a href="#be" data-l="be" style="padding:5px 10px;border-radius:999px;text-decoration:none;color:#3f5d4c">BY</a><a href="#pl" data-l="pl" style="padding:5px 10px;border-radius:999px;text-decoration:none;color:#3f5d4c">PL</a></div><div id="inst" style="display:none;align-items:flex-start;gap:10px;margin:10px 12px 0;padding:12px 14px;background:#fff;border:1px solid #dfe6e1;border-radius:14px;font:14px/1.4 Inter,system-ui,sans-serif;color:#2c3a34"><img src="apple-touch-icon.png" alt="" style="width:36px;height:36px;border-radius:9px;flex:none"><div style="flex:1">Установите гайд как приложение: нажмите «Поделиться», затем «На экран „Домой“». Он будет работать и без интернета.</div><button id="instx" aria-label="close" style="border:0;background:none;font-size:20px;line-height:1;color:#77837d;padding:0 2px;cursor:pointer">×</button></div>
 <div class="band"></div>
 <div class="wrap">
@@ -155,8 +155,8 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
     <h1>Первая помощь в Польше<span>Что делать, где бесплатно научиться и какие приложения поставить</span></h1>
   </div>
   <div class="dial">
-    <div><b>112</b><span>общий экстренный номер</span></div>
-    <div><b>999</b><span>скорая помощь</span></div>
+    <div><b><a class="call" href="tel:112">112</a></b><span>общий экстренный номер</span></div>
+    <div><b><a class="call" href="tel:999">999</a></b><span>скорая помощь</span></div>
   </div>
 </div>
 
@@ -304,7 +304,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
   <p class="lead">Температура, внезапная болезнь ночью или в выходной, а жизни ничего не угрожает — не нужно ехать в приёмное отделение больницы (SOR).</p>
   <div class="nums2">
     <div><b>NiŚOZ</b><span>Ночная и праздничная помощь (nocna i świąteczna opieka zdrowotna): пн–пт с 18:00 до 8:00, в выходные и праздники круглосуточно. Без направления и записи, бесплатно по страховке.</span></div>
-    <div><b>800 190 590</b><span>Справочная NFZ для пациентов (Telefoniczna Informacja Pacjenta), круглосуточно. Подскажет ближайший пункт NiŚOZ, больницу, аптеку. Медицинских советов не даёт.</span></div>
+    <div><b><a class="call" href="tel:800190590">800 190 590</a></b><span>Справочная NFZ для пациентов (Telefoniczna Informacja Pacjenta), круглосуточно. Подскажет ближайший пункт NiŚOZ, больницу, аптеку. Медицинских советов не даёт.</span></div>
   </div>
   <p class="lead" style="margin-top:10px">Адреса пунктов NiŚOZ — на <a href="https://pacjent.gov.pl/nocna-i-swiateczna-opieka-zdrowotna" style="color:var(--sage)">pacjent.gov.pl</a>.</p>
 </section>
@@ -315,27 +315,27 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
   <p class="lead">Эти номера работают по всей Польше, бесплатно. Если не знаете, куда звонить, — набирайте 112: оператор сам передаст вызов нужной службе.</p>
   <p class="cap">Экстренные</p>
   <div class="tel">
-    <div class="hi"><b>112</b><span>Единый экстренный номер — любая угроза жизни, здоровью, имуществу</span></div>
-    <div><b>999</b><span>Скорая медицинская помощь</span></div>
-    <div><b>998</b><span>Пожарная служба (звонок принимает центр 112)</span></div>
-    <div><b>997</b><span>Полиция (звонок принимает центр 112)</span></div>
-    <div><b>601 100 100</b><span>Спасатели на воде (WOPR, MOPR)</span></div>
-    <div><b>601 100 300</b><span>Спасатели в горах (GOPR, TOPR)</span></div>
+    <div class="hi"><b><a class="call" href="tel:112">112</a></b><span>Единый экстренный номер — любая угроза жизни, здоровью, имуществу</span></div>
+    <div><b><a class="call" href="tel:999">999</a></b><span>Скорая медицинская помощь</span></div>
+    <div><b><a class="call" href="tel:998">998</a></b><span>Пожарная служба (звонок принимает центр 112)</span></div>
+    <div><b><a class="call" href="tel:997">997</a></b><span>Полиция (звонок принимает центр 112)</span></div>
+    <div><b><a class="call" href="tel:601100100">601 100 100</a></b><span>Спасатели на воде (WOPR, MOPR)</span></div>
+    <div><b><a class="call" href="tel:601100300">601 100 300</a></b><span>Спасатели в горах (GOPR, TOPR)</span></div>
   </div>
   <p class="cap">Аварийные службы</p>
   <div class="tel">
-    <div><b>991</b><span>Электричество — нет света во всём доме или на улице, оборванные провода</span></div>
-    <div><b>992</b><span>Газ — запах газа. Звоните с улицы, не из квартиры</span></div>
-    <div><b>993</b><span>Отопление (теплосеть)</span></div>
-    <div><b>994</b><span>Водопровод и канализация</span></div>
+    <div><b><a class="call" href="tel:991">991</a></b><span>Электричество — нет света во всём доме или на улице, оборванные провода</span></div>
+    <div><b><a class="call" href="tel:992">992</a></b><span>Газ — запах газа. Звоните с улицы, не из квартиры</span></div>
+    <div><b><a class="call" href="tel:993">993</a></b><span>Отопление (теплосеть)</span></div>
+    <div><b><a class="call" href="tel:994">994</a></b><span>Водопровод и канализация</span></div>
   </div>
   <p class="cap">Справки и поддержка</p>
   <div class="tel">
-    <div><b>800 190 590</b><span>Справочная NFZ для пациентов, круглосуточно</span></div>
-    <div><b>116 000</b><span>Пропал ребёнок (фонд ITAKA)</span></div>
-    <div><b>116 111</b><span>Телефон доверия для детей и подростков</span></div>
-    <div><b>116 123</b><span>Кризисный телефон доверия для взрослых</span></div>
-    <div><b>800 70 2222</b><span>Центр поддержки в психологическом кризисе, круглосуточно</span></div>
+    <div><b><a class="call" href="tel:800190590">800 190 590</a></b><span>Справочная NFZ для пациентов, круглосуточно</span></div>
+    <div><b><a class="call" href="tel:116000">116 000</a></b><span>Пропал ребёнок (фонд ITAKA)</span></div>
+    <div><b><a class="call" href="tel:116111">116 111</a></b><span>Телефон доверия для детей и подростков</span></div>
+    <div><b><a class="call" href="tel:116123">116 123</a></b><span>Кризисный телефон доверия для взрослых</span></div>
+    <div><b><a class="call" href="tel:800702222">800 70 2222</a></b><span>Центр поддержки в психологическом кризисе, круглосуточно</span></div>
   </div>
   <p class="lead" style="margin-top:10px;font-size:13.5px">Номер 986 (городская стража) работает не во всех городах, а 987 (кризисное управление) свой в каждом воеводстве — поэтому их здесь нет.</p>
 </section>
@@ -428,10 +428,10 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
   <h2>Психологическая помощь</h2>
   <p class="lead">После тяжёлой ситуации нормально чувствовать страх, вину или опустошение. Поговорить можно бесплатно и анонимно.</p>
   <div class="nums2">
-    <div><b>800 70 2222</b><span>Центр поддержки для взрослых в кризисе (Centrum Wsparcia), круглосуточно</span></div>
-    <div><b>116 123</b><span>Кризисный телефон доверия для взрослых</span></div>
-    <div><b>116 111</b><span>Телефон доверия для детей и подростков, круглосуточно</span></div>
-    <div><b>112</b><span>Если есть угроза жизни</span></div>
+    <div><b><a class="call" href="tel:800702222">800 70 2222</a></b><span>Центр поддержки для взрослых в кризисе (Centrum Wsparcia), круглосуточно</span></div>
+    <div><b><a class="call" href="tel:116123">116 123</a></b><span>Кризисный телефон доверия для взрослых</span></div>
+    <div><b><a class="call" href="tel:116111">116 111</a></b><span>Телефон доверия для детей и подростков, круглосуточно</span></div>
+    <div><b><a class="call" href="tel:112">112</a></b><span>Если есть угроза жизни</span></div>
   </div>
 </section>
 
@@ -541,7 +541,7 @@ footer{text-align:center;font-size:12.5px;color:var(--muted);padding:30px 16px 2
   <div class="hot">
     <small>Бесплатно · PCK + МВД</small>
     <h3>Семинары по защите населения</h3>
-    <div class="big">800 088 136</div>
+    <div class="big"><a class="call" href="tel:800088136">800 088 136</a></div>
     <p>Основы первой помощи, 72 часа кризиса, отключение света. Очно по всей Польше. Пн–пт 9–17, сб–вс 9–15.</p>
   </div>
 
